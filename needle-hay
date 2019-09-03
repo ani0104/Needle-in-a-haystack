@@ -1,0 +1,13 @@
+var haystack = ['hay', 'rabbit', 'needle', 'hat'];
+function findNeedle (haystack) {
+for(var i=0; i<=4; i++) 
+ {
+  if(haystack[i] === "needle") {
+   console.log("Found the needle at position " + i);
+   break;
+  }  else if (i === haystack.length) {
+   console.log("Could not find the needle in the haystack");
+  }
+ }
+return findNeedle(haystack);
+}
